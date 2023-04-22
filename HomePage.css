@@ -1,0 +1,51 @@
+.bg {
+    background-image: url('../../../public/assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+
+.h1 {
+    position: relative;
+    color: #262626;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: monospace;
+    text-align: center;
+    padding: 12px 0px;
+    color: white;
+
+}
+
+.h1:before {
+    background: #262626;
+    color: white;
+    content: 'Taxi Inquiry Form';
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    padding: 12px 0px;
+    -webkit-clip-path: polygon(0% 0%, 30% 0%, 30% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 30% 0%, 30% 100%, 0% 100%);
+    animation: slide 4s 1s linear 1;
+}
+
+@keyframes slide {
+
+    0% {
+        color: white;
+    }
+
+    50% {
+        -webkit-clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 70% 100%);
+    }
+
+    100% {
+        color: white;
+    }
+}
